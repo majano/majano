@@ -6,7 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     color: rgba(255,255,255,.35);
-    background: #23252A url(../img/bg.svg) 150% center no-repeat;
+    background: #23252A url(../img/bg.svg) 125% 25% no-repeat;
     background-size: 60%; 
     padding: 0;
     margin: 0;
@@ -43,10 +43,30 @@ img {
 .content {
     height: calc(100vh - 405px);
 }
+.content a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+.content a:hover {
+    text-decoration: underline;
+}
+.content a::after {
+    content: '';
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 100px;
+    background: #fff; 
+}
 h1 {
     color: #fff;
-    font-size: 4.2rem;
-    line-height: 72px;
+    font-size: 4.4rem;
+    line-height: 74px;
     margin: 0;
 }
 h2 {
@@ -61,7 +81,7 @@ h2 {
 .footer .contact {
     color: #fff;
     padding: 10px 0;
-}
+} 
 .footer .contact-by-email {
     letter-spacing: 1px;
 }
@@ -104,10 +124,10 @@ h2 {
 }
 .footer li:nth-child(2) img {
     height: 18px; 
-}
+} 
 @media screen and (max-width: 640px) {
     body {
-        background-position: 150% center;        
+        background-image: none;
     }
     h1 {
         font-size: 3rem;
@@ -115,7 +135,7 @@ h2 {
     }
     h2 {
         font-size: 1.1rem;
-    }
+    } 
     .footer {
         display: block;
         text-align: center;
