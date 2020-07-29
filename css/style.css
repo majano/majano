@@ -115,7 +115,7 @@ p {
 }
 .footer li:nth-child(2) img {
     height: 18px; 
-} 
+}  
 
 @media screen and (max-width:640px) {
     body {
