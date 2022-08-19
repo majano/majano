@@ -36,8 +36,6 @@ p {
 }
 
 .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,6 +84,7 @@ p {
 
 .footer p {
     line-height: 1;
+    color: rgba(255, 255, 255, .7);
 }
 
 .footer .contact {
@@ -96,14 +95,8 @@ p {
 .footer .contact-by-email a {
     color: #fff;
     text-decoration: none;
-    -webkit-transition: color 0.2s ease;
-    -o-transition: color 0.2s ease;
     transition: color 0.2s ease;
     display: inline-block;
-}
-
-.footer p {
-    color: rgba(255, 255, 255, .7);
 }
 
 .footer a:hover {
@@ -133,8 +126,6 @@ p {
     height: 16px;
     max-width: 24px;
     vertical-align: top;
-    -webkit-transition: opacity 0.2s ease;
-    -o-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
 }
 
